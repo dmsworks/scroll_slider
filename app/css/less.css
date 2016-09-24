@@ -1,0 +1,224 @@
+@import "http://webfonts.ru/import/opensans.css";
+/*-----------------*/
+/* Цвета */
+/*-----------------*/
+/*-----------------*/
+/* Шрифт */
+/*-----------------*/
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+.open-sans__bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+/*-----------------*/
+/* Глобальное */
+/*-----------------*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #282C34;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 11px;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  border: 0;
+}
+.clear {
+  clear: both;
+}
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+.caps {
+  text-transform: uppercase;
+}
+/*-----------------*/
+/* Body */
+/*-----------------*/
+.text-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 35px;
+  padding-bottom: 0;
+}
+.list-container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100px;
+  margin: 0 auto;
+  padding: 35px;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+p {
+  font-size: 24px;
+  color: #ABB2BF;
+}
+ul li {
+  list-style: disc;
+  font-size: 24px;
+  color: #ABB2BF;
+}
+ul li a {
+  font-size: 24px;
+  color: #ABB2BF;
+}
+/* Слайдер */
+.scroll-slider {
+  margin-bottom: 100px;
+}
+.slider-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  height: 680px;
+  padding-left: 35px;
+}
+#slideContainer {
+  width: 4650px;
+  /* для размещения 5-и панелей с шириной в 910px и отступом в 20px*5 -> 910*5 + 20*5 = 4650px (можно делать больше, если нужно пространство после последнего слайда)*/
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 910px;
+  /* относительно родителя -> от 4650px */
+  float: left;
+  margin-right: 20px;
+  margin-top: 90px;
+}
+.panel:last-child {
+  margin-right: 0;
+}
+.n1 {
+  background: #AEE4EF;
+}
+.n2 {
+  background: #D6857C;
+}
+.n3 {
+  background: #CC9752;
+}
+.n4 {
+  background: #80B78A;
+}
+.n5 {
+  background: #D6857C;
+}
+.panel a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/*-----------------*/
+/* Адаптивность */
+/*-----------------*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .scroll-slider {
+    margin-left: auto;
+    margin-bottom: 35px;
+  }
+  #slideContainer {
+    width: 3200px;
+    /* для размещения 4-х панелей с шириной в 600px */
+    height: 100%;
+  }
+  #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    height: 470px;
+    padding-left: 35px;
+  }
+  .panel {
+    height: 100%;
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 90px;
+  }
+  .panel:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  #slideContainer {
+    width: 1700px;
+    /* для размещения 4-х панелей с шириной в 600px */
+    height: 100%;
+  }
+  #pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    height: 300px;
+    padding-left: 35px;
+  }
+  .panel {
+    height: 100%;
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 90px;
+  }
+  .panel:last-child {
+    margin-right: 0;
+  }
+  .panel a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

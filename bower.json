@@ -1,0 +1,26 @@
+{
+  "name": "technomart",
+  "authors": [
+    "Dmitry Scherenkov <soulance@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "scrollmagic": "^2.0.5"
+  },
+  "devDependencies": {
+    
+  }
+}
