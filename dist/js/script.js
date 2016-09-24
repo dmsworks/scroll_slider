@@ -47,12 +47,6 @@ $(document).ready(function () {
             triggerHook: "onLeave",
             duration: "600%"
         })
-        .on('start', function () {
-        $('.wrapper').addClass('in')
-    })
-        .on('leave', function () {
-        $('.wrapper').removeClass('in')
-    })
         .setPin("#pinContainer")
     //.addIndicators() // инидикаторы триггеров (нужен плагин)
         .setTween(wipeAnimation)
