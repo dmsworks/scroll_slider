@@ -7,32 +7,31 @@ $(document).ready(function () {
     var wipeAnimation = new TimelineMax()
         // Анимация к 2 панели
         .to("#slideContainer", 1, {
-            x: "-25%"
+            x: "-20%", 
         })
-        .to("#slideContainer", 0.5, {
-            z: 0
-        }) 
+       
         // анимация к 3 панели
         
         .to("#slideContainer", 1, {
-            x: "-50%"
+            x: "-40%"
         })
-        .to("#slideContainer", 0.5, {
-            z: 0
-        })
+   
         // анимация к 4 панели
         .to("#slideContainer", 1, {
-            x: "-75%"
+            x: "-60%"
         })
-        .to("#slideContainer", 0.5, {
-            z: 0
-        });
+
+       // анимация к 5 панели
+        .to("#slideContainer", 1, {
+            x: "-80%"
+        })
+  
 
     // Создание сцены в pin и настройка анимации
     new ScrollMagic.Scene({
             triggerElement: "#pinContainer",
             triggerHook: "onLeave",
-            duration: "400%"
+            duration: "450%"
         })
         .on('start', function () {
         $('.wrapper').addClass('in')
