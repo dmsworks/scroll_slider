@@ -5,33 +5,47 @@ $(document).ready(function () {
     
     // Определение движения панелей слайдера
     var wipeAnimation = new TimelineMax()
-        // Анимация к 2 панели
+        // Анимация - шаг 1
         .to("#slideContainer", 1, {
-            x: "-20%", 
+            x: "-10%", ease: Linear.easeNone
         })
-       
-        // анимация к 3 панели
-        
+    
+        // анимация - шаг 2 
         .to("#slideContainer", 1, {
-            x: "-40%"
+            x: "-20%", ease: Linear.easeNone
         })
    
-        // анимация к 4 панели
+    
         .to("#slideContainer", 1, {
-            x: "-60%"
+            x: "-30%", ease: Linear.easeNone
         })
 
-       // анимация к 5 панели
+
         .to("#slideContainer", 1, {
-            x: "-80%"
+            x: "-40%", ease: Linear.easeNone
         })
+    
+       .to("#slideContainer", 1, {
+            x: "-50%", ease: Linear.easeNone
+        })
+    
+       .to("#slideContainer", 1, {
+            x: "-60%", ease: Linear.easeNone
+        })
+       .to("#slideContainer", 1, {
+            x: "-70%", ease: Linear.easeNone
+        })
+    
+   .to("#slideContainer", 1, {
+            x: "-80%", ease: Linear.easeNone
+        });
   
 
     // Создание сцены в pin и настройка анимации
     new ScrollMagic.Scene({
             triggerElement: "#pinContainer",
             triggerHook: "onLeave",
-            duration: "450%"
+            duration: "600%"
         })
         .on('start', function () {
         $('.wrapper').addClass('in')
