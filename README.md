@@ -36,4 +36,4 @@ HTML:
     </div>
 ```
 
-Ширина и высота слайдов записывается в атрибуты _data-panel-width, data-panel-height_ <br />
+Ширина и высота слайдов записываются в атрибуты _data-panel-width, data-panel-height_ <br />
