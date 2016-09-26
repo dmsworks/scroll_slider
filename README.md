@@ -1,8 +1,8 @@
 # scroll_slider
 Для подключения слайдера к странице необходимо добавить следующие библиотеки js:<br />
-1. jQuery <br />
-2. Scroll Magic <br />
-3. TweenMax <br />
+1. [jQuery](https://jquery.com/) <br />
+2. [Scroll Magic](http://scrollmagic.io/) <br />
+3. [TweenMax](https://greensock.com/tweenmax) <br />
 4. animation.gsap (идет в комплекте с Scroll Magic в папке plugins) <br />
 5. slider_main.js (основной скрипт с настройкой слайдера, с эффектами слайдов и адаптивностью) <br />
 
