@@ -152,16 +152,15 @@ ul li{
     -webkit-perspective: 1000;
     perspective: 1000;
     height: 680px;
- 
     padding-left: 35px;
 }
 
 #slideContainer {
-    width: 4650px; /* для размещения 5-и панелей с шириной в 910px и отступом в 20px*5 -> 910*5 + 20*5 = 4650px (можно делать больше, если нужно пространство после последнего слайда)*/
+    width: 4650px; /* для размещения 5-и панелей с шириной в 910px и отступом в 20px*5 -> 910*5 + 20*5 = 4650px*/
     height: 100%;
 }
 
-.panel {
+#slideContainer .panel {
     height: 100%;
     width: 910px; /* относительно родителя -> от 4650px */
     float: left;
@@ -197,7 +196,7 @@ ul li{
     height: 100%;
 }
 
-img {
+.panel a img {
     width: 100%;
     height: 100%;
 }
@@ -209,7 +208,7 @@ img {
 
 
 /*-----------------*/
-
+/*
 @media (max-width: 768px) {
     h1 {
         font-size: 28px;
@@ -224,7 +223,7 @@ img {
 }
     
 #slideContainer {
-    width: 3200px; /* для размещения 4-х панелей с шириной в 600px */
+    width: 3200px; // для размещения 4-х панелей с шириной в 600px
     height: 100%;
 }
 
@@ -253,7 +252,7 @@ img {
 
 @media (max-width: 550px) { 
     #slideContainer {
-    width: 1700px; /* для размещения 4-х панелей с шириной в 600px */
+    width: 1700px; // для размещения 4-х панелей с шириной в 600px
     height: 100%;
 }
 
@@ -288,4 +287,5 @@ img {
     height: 100%;
 }
 
-}
+} 
+*/

@@ -110,10 +110,10 @@ ul li a {
 }
 #slideContainer {
   width: 4650px;
-  /* для размещения 5-и панелей с шириной в 910px и отступом в 20px*5 -> 910*5 + 20*5 = 4650px (можно делать больше, если нужно пространство после последнего слайда)*/
+  /* для размещения 5-и панелей с шириной в 910px и отступом в 20px*5 -> 910*5 + 20*5 = 4650px*/
   height: 100%;
 }
-.panel {
+#slideContainer .panel {
   height: 100%;
   width: 910px;
   /* относительно родителя -> от 4650px */
@@ -121,7 +121,7 @@ ul li a {
   margin-right: 20px;
   margin-top: 90px;
 }
-.panel:last-child {
+#slideContainer .panel:last-child {
   margin-right: 0;
 }
 .n1 {
@@ -144,30 +144,33 @@ ul li a {
   width: 100%;
   height: 100%;
 }
-img {
+.panel a img {
   width: 100%;
   height: 100%;
 }
 /*-----------------*/
 /* Адаптивность */
 /*-----------------*/
+/*
 @media (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .scroll-slider {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 20px;
+    }
+      
+.scroll-slider {
     margin-left: auto;
     margin-bottom: 35px;
-  }
-  #slideContainer {
-    width: 3200px;
-    /* для размещения 4-х панелей с шириной в 600px */
+}
+    
+#slideContainer {
+    width: 3200px; // для размещения 4-х панелей с шириной в 600px
     height: 100%;
-  }
-  #pinContainer {
+}
+
+#pinContainer {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -175,25 +178,28 @@ img {
     perspective: 1000;
     height: 470px;
     padding-left: 35px;
-  }
-  .panel {
+}
+    
+.panel {
     height: 100%;
     width: 600px;
     float: left;
     margin-right: 20px;
     margin-top: 90px;
-  }
-  .panel:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 }
-@media (max-width: 550px) {
-  #slideContainer {
-    width: 1700px;
-    /* для размещения 4-х панелей с шириной в 600px */
+
+}
+
+@media (max-width: 550px) { 
+    #slideContainer {
+    width: 1700px; // для размещения 4-х панелей с шириной в 600px
     height: 100%;
-  }
-  #pinContainer {
+}
+
+#pinContainer {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -201,24 +207,28 @@ img {
     perspective: 1000;
     height: 300px;
     padding-left: 35px;
-  }
-  .panel {
+}
+    
+.panel {
     height: 100%;
     width: 300px;
     float: left;
     margin-right: 20px;
     margin-top: 90px;
-  }
-  .panel:last-child {
-    margin-right: 0;
-  }
-  .panel a {
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.panel a {
     display: block;
     width: 100%;
     height: 100%;
-  }
-  img {
+}
+
+img {
     width: 100%;
     height: 100%;
-  }
 }
+
+} 
+*/
