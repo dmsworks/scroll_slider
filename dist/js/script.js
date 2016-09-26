@@ -66,7 +66,7 @@ $(document).ready(function () {
         .addTo(controller);
 
     // Эффекты ссылок
-    var $panel = $('.panel');
+    var $panel = $('#slideContainer .panel');
     var $slideContainer = $('#slideContainer');
     $panel.mouseenter(function () {
         $(this).siblings().fadeTo(300, 0.8);
@@ -77,7 +77,7 @@ $(document).ready(function () {
     });
 
     // расчет ширины контейнера
-    var $numSlides = $('.panel').length;
+    var $numSlides = $('#slideContainer .panel').length;
     var $panelWidth = $('#pinContainer').attr('data-panel-width');
     var $panelHeight = $('#pinContainer').attr('data-panel-height');
     var $panelMargin = $('#slideContainer .panel').outerWidth(true) - $('#slideContainer .panel').width();
